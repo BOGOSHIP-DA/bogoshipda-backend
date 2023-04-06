@@ -1,9 +1,12 @@
 {
+  "ignore": [
+    "node_modules"
+  ],
   "watch": [
     "routes",
     ".json",
     ".env"
   ],
-  "ext": "js,ts,json",
-  "exec": "ts-node  --transpile-only ./server/serve.ts"
+  "ext": "ts, json",
+  "exec": "babel-node --extensions \".ts\"  src/server/serve.ts"
 }

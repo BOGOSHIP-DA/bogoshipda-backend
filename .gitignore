@@ -13,13 +13,13 @@ results
 tmp
 
 # Build
-public/css/main.css
+src/public/css/main.css
 
 # Coverage reports
 coverage
 
 # API keys and secrets
-config/.env
+src/config/.env
 
 # Dependency directory
 node_modules
