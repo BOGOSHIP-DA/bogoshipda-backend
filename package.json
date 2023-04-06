@@ -19,7 +19,9 @@
     "build": "yarn types:check && yarn build:clean && yarn build:ts",
     "build:clean": "rm -rf dist",
     "build:ts": "babel src -d dist --extensions .ts --source-maps",
-    "types:check": "tsc --noEmit"
+    "types:check": "tsc --noEmit",
+    "lint:check": "eslint src/**/*.ts",
+    "lint:fix": "eslint --fix src/**/*.ts"
   },
   "devDependencies": {
     "@babel/cli": "^7.21.0",
@@ -34,6 +36,11 @@
     "@types/cors": "^2.8.13",
     "@types/express": "^4.17.17",
     "@types/node": "^18.15.11",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "eslint": "^8.37.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
     "nodemon": "^2.0.22",
     "types": "^0.1.1",
     "typescript": "^5.0.3"
