@@ -11,8 +11,8 @@ import * as process from "process";
 const app = express();
 
 try {
-    const envFile = fs.statSync(path.join(__dirname, '../config/.env'));
-    dotenv.config({path: path.join(__dirname, '../config/.env')});
+    const envFile = fs.statSync(path.join(__dirname, '../../config/.env'));
+    dotenv.config({path: path.join(__dirname, '../../config/.env')});
 } catch (err) {
     const envFileError = err as Error;
     if (envFileError.message.includes('ENOENT'))

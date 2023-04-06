@@ -19,7 +19,7 @@ src/public/css/main.css
 coverage
 
 # API keys and secrets
-src/config/.env
+.env
 
 # Dependency directory
 node_modules

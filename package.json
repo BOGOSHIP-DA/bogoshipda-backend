@@ -19,7 +19,6 @@
     "build": "yarn types:check && yarn build:clean && yarn build:ts",
     "build:clean": "rm -rf dist",
     "build:ts": "babel src -d dist --extensions .ts --source-maps",
-    "build:copy": "cp -r src/config dist/config",
     "types:check": "tsc --noEmit"
   },
   "devDependencies": {
