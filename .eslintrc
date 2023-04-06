@@ -10,9 +10,12 @@
     "eslint-config-airbnb-base",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "plugin:@typescript-eslint/strict"
+    "plugin:@typescript-eslint/strict",
+    "plugin:prettier/recommended"
   ],
   "rules": {
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "prettier/prettier": ["error", { "endOfLine": "auto" }],
     "import/extensions": [
       "error",
       "ignorePackages",

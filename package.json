@@ -21,7 +21,9 @@
     "build:ts": "babel src -d dist --extensions .ts --source-maps",
     "types:check": "tsc --noEmit",
     "lint:check": "eslint src/**/*.ts",
-    "lint:fix": "eslint --fix src/**/*.ts"
+    "lint:fix": "eslint --fix src/**/*.ts",
+    "prettier": "prettier --write \"src/**/*.ts\"",
+    "prettier:check": "prettier --check \"src/**/*.ts\""
   },
   "devDependencies": {
     "@babel/cli": "^7.21.0",
@@ -40,8 +42,11 @@
     "@typescript-eslint/parser": "^5.57.1",
     "eslint": "^8.37.0",
     "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
     "nodemon": "^2.0.22",
+    "prettier": "^2.8.7",
     "types": "^0.1.1",
     "typescript": "^5.0.3"
   }
