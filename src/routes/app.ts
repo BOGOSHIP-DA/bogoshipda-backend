@@ -16,7 +16,9 @@ if (process.env.environment !== 'production') {
   } catch (err) {
     const envFileError = err as Error;
     if (envFileError.message.includes('ENOENT')) {
-      throw new Error('missing \'.env\' file in \'config\' folder. please modify \'.env.sample\' file.');
+      throw new Error(
+        "missing '.env' file in 'config' folder. please modify '.env.sample' file.",
+      );
     }
   }
 }
