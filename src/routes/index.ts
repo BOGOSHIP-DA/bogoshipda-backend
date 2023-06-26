@@ -1,8 +1,8 @@
 import { Router, Response, Request } from 'express';
 
-const router = Router();
+const indexRouter = Router();
 
-router.get('/', (req: Request, res: Response) => {
+indexRouter.get('/', (req: Request, res: Response) => {
   res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
   res.write('<title>API ENTRY | 보고싶다</title>');
   res.write('<link rel="icon" href="https://www.bogoship.me/icon.png">');
@@ -12,4 +12,4 @@ router.get('/', (req: Request, res: Response) => {
   res.end('API Document is <a href="https://api.bogoship.me/docs">HERE</a>');
 });
 
-export default router;
+export default indexRouter;

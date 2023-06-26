@@ -5,7 +5,8 @@ import cookieParser from 'cookie-parser';
 import express, { json, urlencoded } from 'express';
 import path from 'path';
 
-import router from './index';
+import indexRouter from './index';
+import kakaoRouter from './kakao';
 
 const app = express();
 
@@ -29,6 +30,7 @@ app.use(json({ limit: '10mb' }));
 app.use(urlencoded({ extended: true }));
 app.use(express.static(`${__dirname}../public`));
 
-app.use('/', router);
+app.use('/', indexRouter);
+app.use('/kakao', kakaoRouter);
 
 export default app;
